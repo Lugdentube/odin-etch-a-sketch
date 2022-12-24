@@ -24,3 +24,7 @@
   flex-direction: column;
   background-color: gray;
 }
+
+.hovered {
+  background-color: black;
+}
