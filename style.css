@@ -1,11 +1,12 @@
 .row {
   display: flex;
+  flex-grow: 1;
 }
 
 .cell {
-  height: 10px;
-  width: 10px;
-  background-color: black;
+  flex-grow: 1;
+  background-color: whitesmoke;
+  margin: .01em;
 }
 
 .master-container {
@@ -13,4 +14,13 @@
   height: 100vh;
   align-items: center;
   justify-content: center;
+}
+
+.game-container {
+  width: 400px;
+  height: 400px;
+  border: solid black;
+  display: flex;
+  flex-direction: column;
+  background-color: gray;
 }
