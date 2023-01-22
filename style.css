@@ -1,5 +1,7 @@
 body {
   background-color: lightgray;
+  color: yellow;
+  font-family: "Titillium Web", sans-serif;
 }
 
 .row {
@@ -52,8 +54,6 @@ body {
 
 .title {
   font-size: 40px;
-  color: yellow;
-  font-family: "Titillium Web", sans-serif;
 }
 
 .device-bottom {
@@ -70,4 +70,43 @@ body {
 
 .hovered {
   background-color: black;
+}
+
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.range-container {
+  transform: rotate(270deg);
+}
+
+.slider {
+  -webkit-appearance: none;
+  background: whitesmoke;
+  border-radius: 7.5px;
+  outline: none;
+  width: 200px;
+}
+
+.slider::-webkit-slider-runnable-track {
+  height: 15px;
+}
+
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background: yellow;
+  margin-top: -5px;
+}
+
+.board-size {
+  font-size: 24px;
+  margin-bottom: 90px;
 }
